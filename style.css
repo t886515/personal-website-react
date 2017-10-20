@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
-@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Damion|Economica|Sacramento');
+/*@import url('https://fonts.googleapis.com/css?family=Poppins:300, 400, 500')*/
+@import url('https://fonts.googleapis.com/css?family=Poppins|Wire+One')
+@import url('href="https://fonts.googleapis.com/css?family=Wire+One');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Damion|Economica|Sacramento|Fira+Sans|Josefin+Sans');
 
 html, body {
   height: 100%;
-  margin: 0;
+  display: grid;
 }
 
 .homeDiv {
@@ -11,16 +14,37 @@ html, body {
   min-height: 100%;
 }
 
+.logo {
+  width: 5%;
+  height: 5%;
+}
+
 .centerDiv {
+  /*text-align: center;*/
+  /*position: absolute;*/
+  /*margin: auto;*/
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.centerName {
   text-align: center;
-  /*position: absolute;
-     margin: auto;
-     top: 0;
-     right: 0;
-     bottom: 0;
-     left: 0;
-     width: 100px;
-     height: 100px;*/
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 90px;
+}
+
+.centerTitle {
+  text-align: center;
+  font-family: 'Economica', sans-serif;
+  font-size: 30px;
+}
+
+.navLinkGroup {
+  text-align: center;
 }
 
 .navlink {
@@ -28,6 +52,6 @@ html, body {
   color: #212121;
   width: 80%;
   font-size: 20px;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
