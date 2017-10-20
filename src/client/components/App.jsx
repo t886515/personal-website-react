@@ -10,7 +10,7 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <div className="homeDiv">
           <div style={{ backgroundColor: 'black' }}>
             <img style={{width: '5%', height: '5%'}} src={logo}/>
           </div>
