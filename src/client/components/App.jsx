@@ -4,9 +4,9 @@ import home from '../images/home.png';
 import { BrowserRouter, Route, Link, Switch, withRouter } from 'react-router-dom';
 import About from './About.jsx';
 import Home from './Home.jsx';
-import Resume from './Resume.jsx';
+import Experiences from './Experiences.jsx';
 import ContactMe from './ContactMe.jsx';
-import Projects from './Projects.jsx'
+import Skills from './Skills.jsx'
 import { CSSTransitionGroup } from 'react-transition-group'
 
 class App extends React.Component {
@@ -41,12 +41,6 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-      <CSSTransitionGroup
-      transitionName="example"
-      transitionAppear={true}
-      transitionAppearTimeout={500}
-      transitionEnter={false}
-      transitionLeave={false}>
         <div className="homeDiv">
           <div style={{ backgroundColor: 'black' }}>
             <Link onMouseOver={this.onMouseOverLogo} onMouseOut={this.onMouseOutLogo} className="navlink" to="/">
@@ -59,12 +53,11 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" render={()=><Home />} />
             <Route path="/about" render={()=><About />} />
-            <Route path="/resume" render={()=><Resume />} />
+            <Route path="/experiences" render={()=><Experiences />} />
             <Route path="/contact" render={()=><ContactMe />} />
-            <Route path="/project" render={()=><Projects />} />
+            <Route path="/skills" render={()=><Skills />} />
           </Switch>
         </div>
-        </CSSTransitionGroup>
       </BrowserRouter>
     );
   }

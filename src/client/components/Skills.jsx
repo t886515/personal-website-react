@@ -1,14 +1,18 @@
 import React from 'react';
 import { BrowserRouter, Route, Link, Switch, withRouter } from 'react-router-dom';
 
-class Resume extends React.Component {
+class Skills extends React.Component {
+  constructor(props) {
+    super(props)
+    console.log('hihihi')
+  }
   render() {
     return (
       <div> 
-      Resume
+      Projectsfdsafdsafd
       </div>
     );
   }
 }
 
-export default withRouter(Resume);
+export default withRouter(Skills);

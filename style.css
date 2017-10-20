@@ -11,6 +11,7 @@ html, body {
 
 .homeDiv {
   background: url('/src/client/images/bg.jpg') no-repeat center center fixed; 
+  /*background-color: yellow;*/
   min-height: 100%;
 }
 
@@ -71,10 +72,12 @@ html, body {
 }
 
 .example-appear {
+  /*transform: translate(0, 0),*/
   opacity: 0.01;
 }
 
 .example-appear.example-appear-active {
+  /*transform: transit(translate(175px, 0), 500, ease-in-out);*/
   opacity: 1;
   transition: opacity 1s ease-in;
 }

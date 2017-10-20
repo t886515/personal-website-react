@@ -23,8 +23,8 @@ class Home extends React.Component {
             <br />
           <div className="navLinkGroup">
             <Link className="navlink" to="/about"><i className="fa fa-id-card-o fa-2x" aria-hidden="true"></i></Link>。
-            <Link className="navlink" to="/resume"> <i className="fa fa-file-o fa-2x" aria-hidden="true"></i> </Link>。
-            <Link className="navlink" to="/project"> <i className="fa fa-wrench fa-2x" aria-hidden="true"></i> </Link>。
+            <Link className="navlink" to="/experiences"> <i className="fa fa-file-o fa-2x" aria-hidden="true"></i> </Link>。
+            <Link className="navlink" to="/skills"> <i className="fa fa-wrench fa-2x" aria-hidden="true"></i> </Link>。
             <Link className="navlink" to="/contact"> <i className="fa fa-envelope-open-o fa-2x" aria-hidden="true"></i> </Link>
             </div>
           </div>
