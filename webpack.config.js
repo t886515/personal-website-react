@@ -6,7 +6,6 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './src/client/index.html',
   filename: 'index.html',
   inject: 'body',
-
 })
 
 
@@ -26,7 +25,7 @@ module.exports = {
         }), 
         test: /\.css$/
       },
-      { test: /\.(jpeg|png|gif|svg|JPG|pdf|ico)$/, use: [{loader: 'url-loader', options: {limit: 40000}}, 'image-webpack-loader']}
+      { test: /\.(jpeg|png|gif|svg|jpg|pdf|ico)$/, use: [{loader: 'url-loader', options: {limit: 40000}}, 'image-webpack-loader']}
     ]
   },
   plugins: [
