@@ -3,8 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import logger from 'morgan';
 import parser from 'body-parser';
-import './db/config';
-import router from './router';
+
 
 import { APP_NAME, STATIC_PATH, WEB_PORT } from '../shared/config';
 import { isProd } from '../shared/util';
