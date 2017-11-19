@@ -36,9 +36,15 @@ app.use('/style.css', function(req, res) {
 });
 
 
+
 // app.all('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, '../src/client/index.html'));
 // });
 
 app.use(express.static(path.join(__dirname, '../dist')));
 app.get('/');
+
+app.all('*', (req, res) => {
+  res.send(path.join(__dirname, '../src/client/index.html'));
+});
+

@@ -16,15 +16,15 @@ class Home extends React.Component {
       transitionAppearTimeout={900}
       transitionEnter={false}
       transitionLeave={false}>
-      <div>
+      <div className="homeDiv">
           <div className="centerDiv">
             <div className="centerName"> LINA YANG </div>
             <div className="centerTitle"> FULL-STACK DEVELOPER・UX/UI DESIGNER・WEB-DEVELOPER </div>
             <br />
           <div className="navLinkGroup">
             <Link className="navlink" to="/about"><i className="fa fa-id-card-o fa-2x" aria-hidden="true"></i></Link>。
-            <Link className="navlink" to="/experiences"> <i className="fa fa-file-o fa-2x" aria-hidden="true"></i> </Link>。
-            <Link className="navlink" to="/skills"> <i className="fa fa-wrench fa-2x" aria-hidden="true"></i> </Link>。
+            <Link className="navlink" to="/resume"> <i className="fa fa-file-o fa-2x" aria-hidden="true"></i> </Link>。
+            <Link className="navlink" to="/journal"> <i className="fa fa-wrench fa-2x" aria-hidden="true"></i> </Link>。
             <Link className="navlink" to="/contact"> <i className="fa fa-envelope-open-o fa-2x" aria-hidden="true"></i> </Link>
             </div>
           </div>

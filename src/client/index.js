@@ -1,18 +1,15 @@
-// import 'babel-polyfill';
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App.jsx';
 // import { AppContainer } from 'react-hot-loader';
 
-// import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-// const wrapApp = AppComponent =>
-//   <AppContainer>
-//     <BrowserRouter>
-//       <AppComponent />
-//     </BrowserRouter>
-//   </AppContainer>
+const wrapApp = AppComponent =>
+    <BrowserRouter>
+      <AppComponent />
+    </BrowserRouter>
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+ReactDOM.render(wrapApp(App), document.getElementById('root'));
 

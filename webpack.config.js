@@ -37,6 +37,9 @@ module.exports = {
       { test: /\.(jpeg|png|gif|svg|jpg|pdf|ico)$/, use: [{loader: 'url-loader', options: {limit: 40000}}, 'image-webpack-loader']}
     ]
   },
+   devServer: {
+    historyApiFallback: true
+  },
   plugins: [
     HtmlWebpackPluginConfig,
     new ExtractTextPlugin('style.css')
