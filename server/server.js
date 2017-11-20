@@ -42,9 +42,9 @@ app.use('/style.css', function(req, res) {
 app.use(express.static(path.join(__dirname, '../dist')));
 app.get('/');
 
-app.all('*', (req, res) => {
-  res.send(path.join(__dirname, '../src/client/index.html'));
-});
+// app.all('*', (req, res) => {
+//   res.send(path.join(__dirname, '../src/client/index.html'));
+// });
 
 const port = process.env.PORT || 8000;
 
