@@ -25,9 +25,6 @@ app.use(parser.json());
 app.use(parser.urlencoded({ extended: false }));
 
 
-app.listen(8000, () => {
-  console.log("Listening on port: ", 8000);
-});
 
 // router(app);
 
@@ -49,3 +46,8 @@ app.all('*', (req, res) => {
   res.send(path.join(__dirname, '../src/client/index.html'));
 });
 
+const port = process.env.PORT || 8000;
+
+app.listen(port, () => {
+  console.log("Listening on port: ", port);
+});
