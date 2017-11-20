@@ -29,7 +29,6 @@ app.use(parser.urlencoded({ extended: false }));
 // router(app);
 
 app.use('/style.css', function(req, res) {
-
   res.sendFile(path.join(__dirname, '../style.css'))
 });
 
@@ -42,8 +41,10 @@ app.use('/style.css', function(req, res) {
 app.use(express.static(path.join(__dirname, '../dist')));
 app.get('/');
 
-app.all('*', (req, res) => {
-  res.send(path.join(__dirname, '../src/client/index.html'));
+app.get('*', (req, res) => {
+  // res.redirect('/');
+
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
 const port = process.env.PORT || 8000;
