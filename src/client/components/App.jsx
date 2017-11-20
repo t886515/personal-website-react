@@ -7,7 +7,6 @@ import ContactMe from './ContactMe.jsx';
 import Skills from './Skills.jsx';
 import NavBar from './NavBar';
 import Footer from './Footer';
-import { FooterDiv } from '../styledComponents';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class App extends React.Component {

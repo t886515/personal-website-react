@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Link, Switch, withRouter } from 'react-router-dom';
+import { H1 } from '../styledComponents';
 
 class Skills extends React.Component {
   constructor(props) {
@@ -8,9 +9,7 @@ class Skills extends React.Component {
   }
   render() {
     return (
-      <div> 
-      Projectsfdsafdsafd
-      </div>
+      <H1> Journal </H1>
     );
   }
 }

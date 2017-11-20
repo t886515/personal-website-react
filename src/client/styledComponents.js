@@ -6,13 +6,22 @@ export const Button = styled.button`
   padding: 0.25em 1em;
   margin: 7px;
   background: transparent;
-  color: #4682BF;
-  border: 2px solid #4682BF;
+  color: white;
+  border: 2px solid white;
   font-size: 17px;
 `;
 
-export const CenterDiv = styled.div`
+//#4682BF nice dark blue color
+
+export const CenterTextAlign = styled.div`
   text-align: center;
+`
+
+export const CenterDiv = styled.div`
+  font-weight:bold;
+  margin:120px auto;
+  height:auto;        
+  width: auto;
 `;
 
 export const H3 = styled.h3`
@@ -30,7 +39,8 @@ export const H1 = styled.h1`
   font: 'Raleway', sans-serif;
   text-transform: uppercase;
   letter-spacing: .5em;
-  color: #2F567F
+  color: #2F567F;
+  text-align: center;
 
 `
 
@@ -54,18 +64,31 @@ export const SearchButton = styled.input`
   font-size: 17px;
 `
 
-export const FooterDiv = styled.div`
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 8%;
-  background-color: black;
-  color: white;
+// export const FooterDiv = styled.div`
+//   position: fixed;
+//   left: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: 8%;
+//   background-color: black;
+//   color: white;
+//   text-align: center;
+// `
+
+export const TextDiv = styled.div`
+  letter-spacing: .1em;
+  color: #172B40;
   text-align: center;
 `
 
-export const Text = styled.text`
-  color: blue;
-  font-style: italic;
+export const ResumeRight = styled.div`
+  text-align: left;
+  position: relative;
+  left 400px;
+`
+
+export const ResumeLeft = styled.div`
+  text-align: left;
+  position: relative;
+  display: inline-block
 `

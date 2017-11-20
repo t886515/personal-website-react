@@ -11,8 +11,8 @@ const styles = {
     height: 36,
   },
   small: {
-    width: 30,
-    height: 30,
+    width: 40,
+    height: 40,
     padding: 10,
   }
 };
@@ -42,6 +42,8 @@ class NavBar extends React.Component {
     this.handleCloseDrawer();
   }
 
+        // <Button className="languageButton">Chinese</Button>
+        // <Button className="languageButton">English</Button>
   render() {
     return (
       <NavBarDiv>
@@ -51,8 +53,6 @@ class NavBar extends React.Component {
           color="white"
           style={styles.small}
         />
-        <Button className="languageButton">Chinese</Button>
-        <Button className="languageButton">English</Button>
         <Drawer 
           open={this.state.open}
           docked={false}

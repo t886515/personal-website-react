@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { FooterDiv } from '../styledComponents';
 
 class Footer extends React.Component {
   constructor(props) {
@@ -14,9 +13,13 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <FooterDiv>
-      123
-      </FooterDiv>
+      <div className="footer">
+        <Link className="link" to="/"> Home </Link> |
+        <Link className="link" to="/about"> About </Link> |
+        <Link className="link" to="/resume"> Resume </Link> |
+        <Link className="link" to="/journal"> Journal </Link> |
+        <Link className="link" to="/contact"> Contact Me </Link>
+      </div>
     );
   }
 }
