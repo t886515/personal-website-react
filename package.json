@@ -6,8 +6,8 @@
   "author": "Lina Yang <t886515@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.js",
-    "startDev": "nodemon --exec babel-node server/server.js",
+    "startDev": "webpack-dev-server --config webpack.config.js",
+    "start": "nodemon --exec babel-node server/server.js",
     "watch": "webpack --watch"
   },
   "dependencies": {
