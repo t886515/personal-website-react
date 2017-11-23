@@ -27,10 +27,10 @@ class Journal extends React.Component {
 
     return (
       <div>
-      <H1> Journal </H1>
-      {mapJournalEntries}
-      <br />
-      <br />
+        <H1> Journal </H1>
+        {mapJournalEntries}
+        <br />
+        <br />
       </div>
     )
   }

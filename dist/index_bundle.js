@@ -26143,25 +26143,25 @@ var App = function (_React$Component) {
     _this.state = {
       journals: [{
         _id: '24324',
-        title: 'test1',
+        title: 'Just before I go...',
         author: 'lina',
-        body: 'Oh, it\'s just me, myself and I\nSolo ride until I die\nCause I got me for life\n(Got me for life, yeah)\nOh I don\'t need a hand to hold\nEven when the night is cold\nI got that fire in my soul\nAnd as far as I can see I just need privacy\nPlus a whole lot of tree fuck all this modesty\nI just need space to do me get a world that they\'re tryna see\nA stellar max flow right beside of me\nA Ferrari I\'m buyin\' three\nA closet of Saint Laurent, get what I want when I want\nCause hunger is driving me, yeah\nI just need to be alone, I just need to be at home\nUnderstand what I\'m speaking on if time is money I need a loan\nBut regardless I\'ll always keep keepin\' on\nFuck fake friends, we don\'t take L\'s we just make M\'s\nWhile y\'all follow, we just make trends\nI\'m right back to work when that break ends\nOh, it\'s just me, myself and I\nSolo ride until I die\nCause I got me for life\n(Got me for life, yeah)\nOh I don\'t need a hand to hold\nEven when the night is cold\nI got that fire in my soul\nI don\'t need anything to get me through the night\nJust the beat that\'s in my heart\nYeah, it\'s keeping me alive\n(Keeps me alive)\nI don\'t need anything to make me satisfied (you know)\nCause the music fills me good and it gets me every time\nYeah, and I don\'t like talking to strangers\nSo get the fuck off me I\'m anxious\nI\'m tryna be cool but I might just go ape shit\nSay fuck y\'all to all of y\'all faces\nIt changes though now that I\'m famous\nEveryone knows how this lifestyle is dangerous\nBut I love it the rush is amazing\nCelebrate nightly and everyone rages\nI found how to cope with my anger\nI\'m swimming in money\nSwimming in liquor my liver is muddy\nBut it\'s all good I\'m still sippin\' this bubbly\nThis shit is lovely, this shit ain\'t random, I didn\'t get lucky\nMade it right here cause I\'m sick with it Cudi\nThey all take the money for granted\nBut don\'t want to work for now tell me, isn\'t it funny?\nOh, it\'s just me, myself and I\nSolo ride until I die\nCause I got me for life\n(Got me for life, yeah)\nOh I don\'t need a hand to hold\nEven when the night is cold\nI got that fire in my soul\nI don\'t need anything to get me through the night\nJust the beat that\'s in my heart\nYeah, it\'s keeping me alive\n(Keeps me alive)\nI don\'t need anything to make me satisfied (you know)\nCause the music fills me good and it gets me every time\nLike ba-ba-ba-ba-da-ba\nBa-ba-ba-da-ba\nBa-ba-ba-ba-da-ba\nBa-ba-ba-da-ba\nBa-ba-ba-ba-da-ba\nBa-ba-ba-da-ba\nCause the music fills me good and it gets me every time\nYeah, lonely nights I laid awake\nPray to lord, my soul to take\nMy heart\'s become too cold to break\nKnow I\'m great but I\'m broke as hell\nHaving dreams that I\'m folding cake\nAll my life I\'ve been told to wait\nBut I\'mma get it now it\'s no debate\nOh, it\'s just me, myself and I\nSolo ride until I die\nCause I got me for life\n(Got me for life, yeah)\nOh I don\'t need a hand to hold\nEven when the night is cold\nI got that fire in my soul\nI don\'t need anything to get me through the night\nJust the beat that\'s in my heart\nYeah, it\'s keeping me alive\n(Keeps me alive)\nI don\'t need anything to make me satisfied (you know)\nCause the music fills me good and it gets me every time\nLike ba-ba-ba-ba-da-ba\nBa-ba-ba-da-ba\nBa-ba-ba-ba-da-ba\nBa-ba-ba-da-ba\nBa-ba-ba-ba-da-ba\nBa-ba-ba-da-ba\nCause the music fills me good and it gets me every time',
+        body: "When it is darkest, men see the stars. \n -Ralph Waldo Emerson \n Forget how dark it is, look at the stars, keep going, and never look back.",
         comments: [{}],
         date: 'Jan, 1, 2018',
         hidden: false
       }, {
         _id: '203423',
-        title: 'test2',
+        title: 'Fear',
         author: 'linaa',
-        body: 'tesfadst tedfafasdfast fdastest test dasftesttttt',
+        body: 'F.E.A.R. has two meanings. \n Forget Everything And Run, or Face Everything And Rise. \n The choice is yours.',
         comments: [{}],
         date: 'Jan, 21, 2018',
         hidden: false
       }, {
         _id: '23423',
-        title: 'test3',
+        title: '到底該怎麼辦呢',
         author: 'lina',
-        body: '==================.....=====',
+        body: '慢慢來，一天一步。總是會成功的。',
         comments: [{}],
         date: 'Jan, 13, 2018',
         hidden: false
