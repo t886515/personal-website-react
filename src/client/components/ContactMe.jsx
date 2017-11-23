@@ -2,10 +2,9 @@ import React from 'react';
 import { BrowserRouter, Route, Link, Switch, withRouter } from 'react-router-dom';
 import { H1, CenterTextAlign, CenterDiv, TextDiv } from '../styledComponents';
 
-class ContactMe extends React.Component {
 
-  render() {
-    return (
+const ContactMe = () => {
+   return (
       <CenterDiv>
       <H1> Contact Me </H1>
       <TextDiv>
@@ -17,8 +16,7 @@ class ContactMe extends React.Component {
       </TextDiv>
 
       </CenterDiv>
-    );
-  }
+  );
 }
 
-export default withRouter(ContactMe);
+export default ContactMe;
