@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Link, Switch, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { H1, CenterTextAlign, CenterDiv, TextDiv } from '../styledComponents';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
@@ -13,6 +13,7 @@ class JournalEntryBlock extends React.Component {
     }
     this.handleMouseEnter = this.handleMouseEnter.bind(this);
     this.handleMouseLeave = this.handleMouseLeave.bind(this);
+    this.handleReadMore = this.handleReadMore.bind(this);
   }
 
 
@@ -22,6 +23,15 @@ class JournalEntryBlock extends React.Component {
 
   handleMouseEnter() {
     this.setState({zDepth: 3})
+  }
+
+  handleReadMore(e) {
+    e.preventDefault();
+    // console.log(journal)
+    this.props.updateSelectedJournal(this.props.journal);
+    
+    this.props.history.push('/journalPage');
+    // this.props.this.props.journal
   }
 
   render() {
@@ -45,7 +55,7 @@ class JournalEntryBlock extends React.Component {
           {journalDisplay}
         </CardText>
         <CardActions>
-          <FlatButton style={{"float":"right", "top":"-40px"}} label="Click to read more" />
+          <FlatButton className="readMoreButton" label="Click to read more" onClick={this.handleReadMore} />
         </CardActions>
       </Card>
       <br />
@@ -73,4 +83,4 @@ class JournalEntryBlock extends React.Component {
 //   }
 // }
 
-export default JournalEntryBlock;
+export default withRouter(JournalEntryBlock);

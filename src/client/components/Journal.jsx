@@ -17,9 +17,11 @@ class Journal extends React.Component {
   }
 
   render() {
-    const mapJournalEntries = this.props.journals.map((journal) => {
+    const { journals, updateSelectedJournal } = this.props;
+
+    const mapJournalEntries = journals.map((journal) => {
       return ( 
-        <JournalEntryBlock journal={journal} /> 
+        <JournalEntryBlock key={journal._id} journal={journal} updateSelectedJournal={updateSelectedJournal}/> 
         )
     });
 
@@ -27,6 +29,8 @@ class Journal extends React.Component {
       <div>
       <H1> Journal </H1>
       {mapJournalEntries}
+      <br />
+      <br />
       </div>
     )
   }

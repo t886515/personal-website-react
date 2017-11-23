@@ -15,8 +15,14 @@ class JournalEntryPage extends React.Component {
   }
 
   render() {
+    const { selectedJournal } = this.props;
     return (
-      <H1> Journal </H1>
+      <div>
+        <H1> Journal </H1>
+        <span>
+        {selectedJournal.body}
+        </span>
+      </div>
     );
   }
 }

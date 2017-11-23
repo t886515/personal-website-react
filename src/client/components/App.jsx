@@ -5,6 +5,7 @@ import Home from './Home.jsx';
 import Experiences from './Experiences.jsx';
 import ContactMe from './ContactMe.jsx';
 import Journal from './Journal.jsx';
+import JournalEntryPage from './JournalEntryPage.jsx';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -14,6 +15,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       journals: [{
+        _id: '24324',
         title: 'test1',
         author: 'lina',
         body: `Oh, it's just me, myself and I
@@ -116,6 +118,7 @@ Cause the music fills me good and it gets me every time`,
         date: 'Jan, 1, 2018',
         hidden: false
       }, {
+        _id: '203423',
         title: 'test2',
         author: 'linaa',
         body: 'tesfadst tedfafasdfast fdastest test dasftesttttt',
@@ -123,6 +126,7 @@ Cause the music fills me good and it gets me every time`,
         date: 'Jan, 21, 2018',
         hidden: false
       }, {
+        _id: '23423',
         title: 'test3',
         author: 'lina',
         body: '==================.....=====',
@@ -165,8 +169,8 @@ Cause the music fills me good and it gets me every time`,
               updateSelectedJournal={this.updateSelectedJournal}
              />} />
           </Switch>
-        </div>
         <Footer />
+        </div>
       </MuiThemeProvider>
     );
   }
