@@ -18,7 +18,7 @@ class App extends React.Component {
         _id: '24324',
         title: 'Just before I go...',
         author: 'lina',
-        body: "When it is darkest, men see the stars. \n -Ralph Waldo Emerson \n Forget how dark it is, look at the stars, keep going, and never look back.",
+        body: "When it is the darkest, men see the stars. \n -Ralph Waldo Emerson \n Forget how dark it is, look at the stars, keep going, and never look back.",
         comments:[{}],
         date: 'Jan, 1, 2018',
         hidden: false

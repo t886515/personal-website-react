@@ -4,6 +4,8 @@ import cors from 'cors';
 import logger from 'morgan';
 import parser from 'body-parser';
 import path from 'path';
+import handler from './responseHandler.js';
+
 
 // import { APP_NAME, STATIC_PATH, WEB_PORT } from '../shared/config';
 // import { isProd } from '../shared/util';
@@ -33,17 +35,14 @@ app.use('/style.css', function(req, res) {
 });
 
 
-
-// app.all('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, '../src/client/index.html'));
-// });
-
 app.use(express.static(path.join(__dirname, '../dist')));
 app.get('/');
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
+
+app.get('/getJournals', handler.getJournals)
 
 const port = process.env.PORT || 8000;
 
