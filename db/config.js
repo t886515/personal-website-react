@@ -2,12 +2,15 @@ var mongoose = require('mongoose');
 global.Promise = require('bluebird');
 mongoose.Promise = require('bluebird');
 
-mongoose.connect('mongodb://localhost/journalDB', {
-  server: { reconnectTries: Number.MAX_VALUE }
-});
-// mongoose.connect('mongodb://192.168.0.24/journalDB', {
+// mongoose.connect('mongodb://localhost/journalDB', {
 //   server: { reconnectTries: Number.MAX_VALUE }
 // });
+mongoose.connect(
+  'mongodb://heroku_fbd9pmlk:vlm68bf83sguifqqb08mpkfnaa@ds247699.mlab.com:47699/heroku_fbd9pmlk',
+  {
+    server: { reconnectTries: Number.MAX_VALUE }
+  }
+);
 
 var db = mongoose.connection;
 
