@@ -32,9 +32,9 @@ class App extends React.Component {
         hidden: false
       }, {
         _id: '23423',
-        title: '到底該怎麼辦呢',
+        title: 'Memory Leaks',
         author: 'lina',
-        body: '慢慢來，一天一步。總是會成功的。',
+        body: 'The main cause for leaks in garbage collected languages are unwanted references.',
         comments:[{}],
         date: 'Jan, 13, 2018',
         hidden: false
