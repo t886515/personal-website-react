@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Link, Switch, withRouter } from 'react-router-dom';
-import { H1 } from '../styledComponents';
+import { H1 } from '../../styledComponents';
 import JournalEntryBlock from './JournalEntryBlock.jsx';
 
 class Journal extends React.Component {
@@ -20,8 +20,8 @@ class Journal extends React.Component {
     const { journals, updateSelectedJournal } = this.props;
 
     const mapJournalEntries = journals.map((journal) => {
-      return ( 
-        <JournalEntryBlock key={journal._id} journal={journal} updateSelectedJournal={updateSelectedJournal}/> 
+      return (
+        <JournalEntryBlock key={journal._id} journal={journal} updateSelectedJournal={updateSelectedJournal}/>
         )
     });
 

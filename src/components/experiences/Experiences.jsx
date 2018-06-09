@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route, Link, Switch, withRouter } from 'react-router-dom';
-import { H1, H3, ResumeRight, ResumeLeft } from '../styledComponents';
+import { H1, H3, ResumeRight, ResumeLeft } from '../../styledComponents';
 import { CSSTransitionGroup } from 'react-transition-group';
+import './Experiences.css';
 
 class Experiences extends React.Component {
   render() {
     return (
-      <div> 
+      <div>
       <H1>Resume</H1>
 
         <br />
@@ -34,7 +35,7 @@ class Experiences extends React.Component {
         </ResumeRight>
         </CSSTransitionGroup>
         </div>
-        
+
         <br />
         <hr />
         <br />
@@ -55,7 +56,7 @@ class Experiences extends React.Component {
             <br />
             <a href="http://mindflare.me/">http://mindflare.me/</a>
             <br />
-            A productivity app that uses a tree data structure to allow users to create a visualization of ideas 
+            A productivity app that uses a tree data structure to allow users to create a visualization of ideas
             <br />
             Designed NoSQL database schema using Mongoose ORM to organize data type, data relationship, and data storage efficiently
             <br />
@@ -68,7 +69,7 @@ class Experiences extends React.Component {
             <br />
             <span>
             Concreet - Front-End Software Engineer
-            <br />                                                            
+            <br />
             <a href="http://www.concreet.date/">http://www.concreet.date/</a>
             <br />
             A calendar manager app that allows users to check for attendees’ available  hours and send event invitations
@@ -122,7 +123,7 @@ class Experiences extends React.Component {
         <br />
         Austin Community College - Computer Science (APT) --- Austin, Texas 2016 - 2017
         <br />
-        Hack Reactor - Advanced Software Engineering Immersive --- Austin, Texas 2017 
+        Hack Reactor - Advanced Software Engineering Immersive --- Austin, Texas 2017
         </ResumeRight>
         </CSSTransitionGroup>
         </div>

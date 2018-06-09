@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { H1, CenterTextAlign, CenterDiv, TextDiv } from '../styledComponents';
+import { H1, CenterTextAlign, CenterDiv, TextDiv } from '../../styledComponents';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 // import Office from '../images/bg.jpg'
@@ -29,7 +29,7 @@ class JournalEntryBlock extends React.Component {
     e.preventDefault();
     // console.log(journal)
     this.props.updateSelectedJournal(this.props.journal);
-    
+
     this.props.history.push('/journalPage');
     // this.props.this.props.journal
   }
@@ -40,9 +40,9 @@ class JournalEntryBlock extends React.Component {
 
     return (
       <div>
-      <Card 
-      containerStyle={{"display": "inline"}} 
-      style={{"width": "80%", "margin": "auto" }} 
+      <Card
+      containerStyle={{"display": "inline"}}
+      style={{"width": "80%", "margin": "auto" }}
       zDepth={this.state.zDepth}
       onMouseEnter={this.handleMouseEnter}
       onMouseLeave={this.handleMouseLeave}
@@ -60,7 +60,7 @@ class JournalEntryBlock extends React.Component {
       </Card>
       <br />
       </div>
-    ) 
+    )
   }
 }
 

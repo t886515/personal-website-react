@@ -1,7 +1,7 @@
 import React from 'react';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
-import { updateUser } from '../model/user';
+// import { updateUser } from '../../model/user';
 
 class JournalCreationForm extends React.Component {
   constructor(props) {
@@ -24,7 +24,7 @@ class JournalCreationForm extends React.Component {
         this.props.updateAllUsers();
       }
     })
-  
+
   }
 
   handleOnChange(e) {
@@ -59,12 +59,10 @@ class JournalCreationForm extends React.Component {
             label="Submit"
             onClick={this.onSubmitForm} />
         </form>
-        
+
       </div>
     );
   }
 }
 
 export default JournalCreationForm;
-
-

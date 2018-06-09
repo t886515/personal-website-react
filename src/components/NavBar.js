@@ -11,39 +11,40 @@ const styles = {
     height: 36,
   },
   small: {
-    width: 40,
-    height: 40,
+    width: 60,
+    height: 60,
     padding: 10,
-  }
+  },
 };
 
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: false
-    }
+      open: false,
+    };
     this.handleMenu = this.handleMenu.bind(this);
     this.handleCloseDrawer = this.handleCloseDrawer.bind(this);
     this.handleToggleDrawer = this.handleToggleDrawer.bind(this);
-
   }
 
   handleToggleDrawer() {
-    this.setState({open: !this.state.open});
+    this.setState({ open: !this.state.open });
   }
 
   handleCloseDrawer() {
-    this.setState({open: false});
+    this.setState({ open: false });
   }
 
   handleMenu(e) {
-    e.target.innerText==="Home"? this.props.history.push("/") : this.props.history.push(`/${e.target.innerText}`);
+    e.target.innerText === 'Home'
+      ? this.props.history.push('/')
+      : this.props.history.push(`/${e.target.innerText}`);
     this.handleCloseDrawer();
   }
 
-        // <Button className="languageButton">Chinese</Button>
-        // <Button className="languageButton">English</Button>
+  // <Button className="languageButton">Chinese</Button>
+  // <Button className="languageButton">English</Button>
   render() {
     return (
       <NavBarDiv>
@@ -53,7 +54,7 @@ class NavBar extends React.Component {
           color="white"
           style={styles.small}
         />
-        <Drawer 
+        <Drawer
           open={this.state.open}
           docked={false}
           width={200}
@@ -64,7 +65,6 @@ class NavBar extends React.Component {
           <MenuItem onClick={this.handleMenu} primaryText="Resume" />
           <MenuItem onClick={this.handleMenu} primaryText="Journal" />
           <MenuItem onClick={this.handleMenu} primaryText="Contact" />
-          
         </Drawer>
       </NavBarDiv>
     );

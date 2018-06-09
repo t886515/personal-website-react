@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const Button = styled.button`
   border-radius: 3px;
   padding: 0.25em 1em;
@@ -15,54 +14,54 @@ export const Button = styled.button`
 
 export const CenterTextAlign = styled.div`
   text-align: center;
-`
+`;
 
 export const CenterDiv = styled.div`
-  font-weight:bold;
-  margin:120px auto;
-  height:auto;        
+  font-weight: bold;
+  margin: 120px auto;
+  height: auto;
   width: auto;
 `;
 
 export const H3 = styled.h3`
   text-transform: uppercase;
-  letter-spacing: .1em;
-  color: #172B40;
-`
+  letter-spacing: 0.1em;
+  color: #172b40;
+`;
 
 export const NavBarDiv = styled.div`
+  margin: 8px;
   background-color: black;
   border-radius: 5px;
-`
+`;
 
 export const H1 = styled.h1`
   font: 'Raleway', sans-serif;
   text-transform: uppercase;
-  letter-spacing: .5em;
-  color: #2F567F;
+  letter-spacing: 0.5em;
+  color: #2f567f;
   text-align: center;
-
-`
+`;
 
 export const SubmitButton = styled.input`
   border-radius: 3px;
   padding: 0.25em 1em;
   margin: 7px;
-  background: #4682BF;
+  background: #4682bf;
   color: black;
   border: 2px solid black;
   font-size: 14px;
-`
+`;
 
 export const SearchButton = styled.input`
   border-radius: 1px;
   padding: 0.25em 1em;
   margin: 7px;
   background: transparent;
-  color: #4682BF;
-  border: 2px solid #4682BF;
+  color: #4682bf;
+  border: 2px solid #4682bf;
   font-size: 17px;
-`
+`;
 
 // export const FooterDiv = styled.div`
 //   position: fixed;
@@ -76,19 +75,19 @@ export const SearchButton = styled.input`
 // `
 
 export const TextDiv = styled.div`
-  letter-spacing: .1em;
-  color: #172B40;
+  letter-spacing: 0.1em;
+  color: #172b40;
   text-align: center;
-`
+`;
 
 export const ResumeRight = styled.div`
   text-align: left;
   position: relative;
   left 400px;
-`
+`;
 
 export const ResumeLeft = styled.div`
   text-align: left;
   position: relative;
-  display: inline-block
-`
+  display: inline-block;
+`;

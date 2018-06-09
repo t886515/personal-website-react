@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Link, Switch, withRouter } from 'react-router-dom';
-import { H1, CenterTextAlign, CenterDiv, TextDiv } from '../styledComponents';
+import { H1, CenterTextAlign, CenterDiv, TextDiv } from '../../styledComponents';
 
 
 const ContactMe = () => {

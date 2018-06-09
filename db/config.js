@@ -8,8 +8,8 @@ mongoose.Promise = require('bluebird');
 mongoose.connect(
   'mongodb://heroku_fbd9pmlk:vlm68bf83sguifqqb08mpkfnaa@ds247699.mlab.com:47699/heroku_fbd9pmlk',
   {
-    server: { reconnectTries: Number.MAX_VALUE }
-  }
+    server: { reconnectTries: Number.MAX_VALUE },
+  },
 );
 
 var db = mongoose.connection;
