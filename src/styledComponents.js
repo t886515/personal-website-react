@@ -62,32 +62,3 @@ export const SearchButton = styled.input`
   border: 2px solid #4682bf;
   font-size: 17px;
 `;
-
-// export const FooterDiv = styled.div`
-//   position: fixed;
-//   left: 0;
-//   bottom: 0;
-//   width: 100%;
-//   height: 8%;
-//   background-color: black;
-//   color: white;
-//   text-align: center;
-// `
-
-export const TextDiv = styled.div`
-  letter-spacing: 0.1em;
-  color: #172b40;
-  text-align: center;
-`;
-
-export const ResumeRight = styled.div`
-  text-align: left;
-  position: relative;
-  left 400px;
-`;
-
-export const ResumeLeft = styled.div`
-  text-align: left;
-  position: relative;
-  display: inline-block;
-`;

@@ -7,6 +7,7 @@ import {
   withRouter,
 } from 'react-router-dom';
 import { CSSTransitionGroup } from 'react-transition-group';
+import './Home.css'
 
 class Home extends Component {
   render() {
@@ -18,27 +19,24 @@ class Home extends Component {
         transitionEnter={false}
         transitionLeave={false}
       >
-        <div className="homeDiv">
-          <div className="centerDiv">
-            <div className="centerName"> LINA YANG </div>
-            <div className="centerTitle">
+        <div className="home">
+          <div className="home__wrapper center-div">
+            <div className="home__name"> LINA YANG </div>
+            <div className="home__titles">
               SOFTWARE ENGINEER・FULL-STACK DEVELOPER・UI DESIGNER
             </div>
             <br />
-            <div className="navLinkGroup">
+            <div className="navlink-group">
               <Link className="navlink" to="/about">
                 <i className="fa fa-id-card-o fa-2x" aria-hidden="true" />
               </Link>。
               <Link className="navlink" to="/resume">
-                {' '}
                 <i className="fa fa-file-o fa-2x" aria-hidden="true" />{' '}
               </Link>。
               <Link className="navlink" to="/journal">
-                {' '}
                 <i className="fa fa-wrench fa-2x" aria-hidden="true" />{' '}
               </Link>。
               <Link className="navlink" to="/contact">
-                {' '}
                 <i
                   className="fa fa-envelope-open-o fa-2x"
                   aria-hidden="true"

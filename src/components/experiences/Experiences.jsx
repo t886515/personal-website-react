@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Link, Switch, withRouter } from 'react-router-dom';
-import { H1, H3, ResumeRight, ResumeLeft } from '../../styledComponents';
+import { H1, H3 } from '../../styledComponents';
 import { CSSTransitionGroup } from 'react-transition-group';
 import './Experiences.css';
 
@@ -14,16 +14,16 @@ class Experiences extends React.Component {
         <hr />
         <br />
         <div>
-        <ResumeLeft>
+        <div className="resume-left">
         <H3>Technical Skills</H3>
-        </ResumeLeft>
+        </div>
         <CSSTransitionGroup
         transitionName="example"
         transitionAppear={true}
         transitionAppearTimeout={900}
         transitionEnter={false}
         transitionLeave={false}>
-        <ResumeRight>
+        <div className="resume-right">
         <br />
         Strong
         <br />
@@ -32,7 +32,7 @@ class Experiences extends React.Component {
         Experienced
         <br />
         D3.js, Node.js, MySQL, SQLite, Webpack
-        </ResumeRight>
+        </div >
         </CSSTransitionGroup>
         </div>
 
@@ -40,17 +40,17 @@ class Experiences extends React.Component {
         <hr />
         <br />
 
-        <div className="developmentExp">
-        <ResumeLeft>
+        <div className="development-exp">
+        <div className="resume-left">
         <H3>Applications</H3>
-        </ResumeLeft>
+        </div>
         <CSSTransitionGroup
         transitionName="example"
         transitionAppear={true}
         transitionAppearTimeout={900}
         transitionEnter={false}
         transitionLeave={false}>
-        <ResumeRight>
+        <div className="resume-right">
             <span>
             Mindflare - Front-End Software Engineer
             <br />
@@ -99,7 +99,7 @@ class Experiences extends React.Component {
             Implemented efficiency algorithm for random selection and random group selection
 
             </span>
-        </ResumeRight>
+        </div >
         </CSSTransitionGroup>
 
         </div>
@@ -109,22 +109,22 @@ class Experiences extends React.Component {
         <br />
 
         <div>
-        <ResumeLeft>
+        <div className="resume-left">
         <H3>Education</H3>
-        </ResumeLeft>
+        </div>
         <CSSTransitionGroup
         transitionName="example"
         transitionAppear={true}
         transitionAppearTimeout={900}
         transitionEnter={false}
         transitionLeave={false}>
-        <ResumeRight>
+        <div className="resume-right">
         University of Texas at Austin - Bachelor of Chemistry --- Austin, Texas 2010 - 2014
         <br />
         Austin Community College - Computer Science (APT) --- Austin, Texas 2016 - 2017
         <br />
         Hack Reactor - Advanced Software Engineering Immersive --- Austin, Texas 2017
-        </ResumeRight>
+        </div >
         </CSSTransitionGroup>
         </div>
 

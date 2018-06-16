@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { H1, CenterTextAlign, CenterDiv, TextDiv } from '../../styledComponents';
+import { H1, CenterTextAlign, CenterDiv } from '../../styledComponents';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 // import Office from '../images/bg.jpg'
@@ -63,24 +63,5 @@ class JournalEntryBlock extends React.Component {
     )
   }
 }
-
-// class JournalEntryBlock extends React.Component {
-
-//   render() {
-//     return (
-//       <CenterDiv>
-//       <H1> Contact Me </H1>
-//       <TextDiv>
-//       LinkedIn: https://www.linkedin.com/in/lina-yang-6610b393/
-//       <br />
-//       GitHub: https://github.com/t886515/
-//       <br />
-//       Email: lina.c.yang.55@gmail.com
-//       </TextDiv>
-
-//       </CenterDiv>
-//     );
-//   }
-// }
 
 export default withRouter(JournalEntryBlock);

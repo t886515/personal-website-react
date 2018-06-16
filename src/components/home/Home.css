@@ -1,0 +1,30 @@
+.home {
+  background: url('/src/client/images/office.png') no-repeat center;
+  min-height: 100%;
+}
+
+.home__name {
+  line-height: 1;
+  color: black;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 90px;
+}
+
+.home__titles {
+  text-align: center;
+  font-family: 'Economica', sans-serif;
+  font-size: 30px;
+}
+
+.navlink-group {
+  text-align: center;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #212121;
+  width: 80%;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+}

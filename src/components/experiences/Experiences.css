@@ -1,0 +1,11 @@
+.resume-left {
+  text-align: left;
+  position: relative;
+  display: inline-block;
+}
+
+.resume-right {
+  text-align: left;
+  position: relative;
+  left: 400px;
+}
