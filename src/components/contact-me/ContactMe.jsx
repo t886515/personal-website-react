@@ -7,7 +7,7 @@ const ContactMe = () => {
    return (
       <CenterDiv>
       <H1> Contact Me </H1>
-      <div class="text-div">
+      <div className="text-div">
       LinkedIn: https://www.linkedin.com/in/lina-yang-6610b393/
       <br />
       GitHub: https://github.com/t886515/

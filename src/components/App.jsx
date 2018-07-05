@@ -13,80 +13,8 @@ import './App.css';
 
 class App extends React.Component {
   state = {
-    journals: [
-      {
-        _id: '24324',
-        title: 'Just before I go...',
-        author: 'lina',
-        body:
-          'When it is the darkest, men see the stars. \n -Ralph Waldo Emerson \n Forget how dark it is, look at the stars, keep going, and never look back.',
-        comments: [{}],
-        date: 'Jan, 1, 2018',
-        hidden: false,
-      },
-      {
-        _id: '203423',
-        title: 'Fear',
-        author: 'linaa',
-        body:
-          'F.E.A.R. has two meanings. \n Forget Everything And Run, or Face Everything And Rise. \n The choice is yours.',
-        comments: [{}],
-        date: 'Jan, 21, 2018',
-        hidden: false,
-      },
-      {
-        _id: '23423',
-        title: 'Memory Leaks',
-        author: 'lina',
-        body:
-          'The main cause for leaks in garbage collected languages are unwanted references.',
-        comments: [{}],
-        date: 'Jan, 13, 2018',
-        hidden: false,
-      },
-    ],
     selectedJournal: {},
   };
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     journals: [
-  //       {
-  //         _id: '24324',
-  //         title: 'Just before I go...',
-  //         author: 'lina',
-  //         body:
-  //           'When it is the darkest, men see the stars. \n -Ralph Waldo Emerson \n Forget how dark it is, look at the stars, keep going, and never look back.',
-  //         comments: [{}],
-  //         date: 'Jan, 1, 2018',
-  //         hidden: false,
-  //       },
-  //       {
-  //         _id: '203423',
-  //         title: 'Fear',
-  //         author: 'linaa',
-  //         body:
-  //           'F.E.A.R. has two meanings. \n Forget Everything And Run, or Face Everything And Rise. \n The choice is yours.',
-  //         comments: [{}],
-  //         date: 'Jan, 21, 2018',
-  //         hidden: false,
-  //       },
-  //       {
-  //         _id: '23423',
-  //         title: 'Memory Leaks',
-  //         author: 'lina',
-  //         body:
-  //           'The main cause for leaks in garbage collected languages are unwanted references.',
-  //         comments: [{}],
-  //         date: 'Jan, 13, 2018',
-  //         hidden: false,
-  //       },
-  //     ],
-  //     selectedJournal: {},
-  //   };
-  //   // this.updateJournals = this.updateJournals.bind(this);
-  //   // this.updateSelectedJournal = this.updateSelectedJournal.bind(this);
-  // }
 
   updateJournals = (journals) => {
     this.setState({ journals });
@@ -110,7 +38,6 @@ class App extends React.Component {
               path="/journal"
               render={() => (
                 <Journal
-                  journals={this.state.journals}
                   updateJournals={this.updateJournals}
                   updateSelectedJournal={this.updateSelectedJournal}
                 />

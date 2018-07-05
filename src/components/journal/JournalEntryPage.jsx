@@ -20,7 +20,7 @@ class JournalEntryPage extends React.Component {
       <div>
         <H1> Journal </H1>
         <span>
-        {selectedJournal.body}
+        {selectedJournal.content}
         </span>
       </div>
     );

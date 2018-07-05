@@ -15,7 +15,7 @@ class About extends Component {
           transitionAppearTimeout={900}
           transitionEnter={false}
           transitionLeave={false}>
-        <div class="text-div">
+        <div className="text-div">
           I’m a Full-Stack Software Engineer who loves to turn ideas into practical software.
           <br />
           I’m the type of person who emphasizes self-improvement and loves to push myself.

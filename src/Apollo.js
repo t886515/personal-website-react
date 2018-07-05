@@ -1,21 +1,14 @@
 import ApolloClient from 'apollo-boost';
+import { InMemoryCache } from 'apollo-cache-inmemory';
+import { HttpLink } from 'apollo-link-http';
 
 const uri = 'http://localhost:3000/graphql';
+const cache = new InMemoryCache();
 
-const client = new ApolloClient({
+const apolloClient = new ApolloClient({
   uri,
+  cache,
+  link: new HttpLink(),
 });
 
-import gql from 'graphql-tag';
-
-client
-  .query({
-    query: gql`
-      {
-        Journals {
-          id
-        }
-      }
-    `,
-  })
-  .then(result => console.log(result));
+export default apolloClient;

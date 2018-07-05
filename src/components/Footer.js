@@ -1,42 +1,24 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-class Footer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const footerRoutes = [
+  { title: 'Home |', route: '/' },
+  { title: ' About |', route: '/about' },
+  { title: ' Resume |', route: '/resume' },
+  { title: ' Journal |', route: '/journal' },
+  { title: ' Contact Me', route: '/contact' },
+];
 
-  render() {
-    return (
-      <div className="footer">
-        <Link className="link" to="/">
-          {' '}
-          Home{' '}
-        </Link>{' '}
-        |
-        <Link className="link" to="/about">
-          {' '}
-          About{' '}
-        </Link>{' '}
-        |
-        <Link className="link" to="/resume">
-          {' '}
-          Resume{' '}
-        </Link>{' '}
-        |
-        <Link className="link" to="/journal">
-          {' '}
-          Journal{' '}
-        </Link>{' '}
-        |
-        <Link className="link" to="/contact">
-          {' '}
-          Contact Me{' '}
+const Footer = () => {
+  return (
+    <div className="footer">
+      {footerRoutes.map(({ title, route }, i) => (
+        <Link className="link" key={i} to={route}>
+          {title}
         </Link>
-      </div>
-    );
-  }
-}
+      ))}
+    </div>
+  );
+};
 
 export default withRouter(Footer);
