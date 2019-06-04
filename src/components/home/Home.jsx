@@ -1,53 +1,76 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { withRouter } from 'react-router-dom';
+import style from 'styled-components';
 import {
-  BrowserRouter,
-  Route,
-  Link,
-  Switch,
-  withRouter,
-} from 'react-router-dom';
-import { CSSTransitionGroup } from 'react-transition-group';
-import './Home.css'
+  FlexWrapper,
+  FadeInTransition,
+  colors
+} from '../../share-style/share-styles';
+import About from '../about/About';
+import Projects from '../projects/Projects';
 
-class Home extends Component {
-  render() {
-    return (
-      <CSSTransitionGroup
-        transitionName="example"
-        transitionAppear={true}
-        transitionAppearTimeout={900}
-        transitionEnter={false}
-        transitionLeave={false}
-      >
-        <div className="home">
-          <div className="home__wrapper center-div">
-            <div className="home__name"> LINA YANG </div>
-            <div className="home__titles">
-              SOFTWARE ENGINEER・FULL-STACK DEVELOPER・UI DESIGNER
-            </div>
-            <br />
-            <div className="navlink-group">
-              <Link className="navlink" to="/about">
-                <i className="fa fa-id-card-o fa-2x" aria-hidden="true" />
-              </Link>。
-              <Link className="navlink" to="/resume">
-                <i className="fa fa-file-o fa-2x" aria-hidden="true" />{' '}
-              </Link>。
-              <Link className="navlink" to="/journal">
-                <i className="fa fa-wrench fa-2x" aria-hidden="true" />{' '}
-              </Link>。
-              <Link className="navlink" to="/contact">
-                <i
-                  className="fa fa-envelope-open-o fa-2x"
-                  aria-hidden="true"
-                />{' '}
-              </Link>
-            </div>
-          </div>
-        </div>
-      </CSSTransitionGroup>
-    );
+const HomeWrapper = style(FlexWrapper)`
+  width: 100%;
+`;
+
+const HomeNameTitle = style(FlexWrapper)`
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/SApe8D0Hxixn8kzj7/computer-keyboard-with-fiber-optics-background-shot-in-hd_hodkyrhdg_thumbnail-full01.png');
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.8;
+
+  &: before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    content: '';
+    border: 1px white solid;
   }
-}
+
+`;
+
+const HomeMyName = style.h1`
+  margin: 0;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 90px;
+  color: ${colors.grey4}
+`;
+
+const HomeMyTitles = style.div`
+  text-align: center;
+  font-family: 'Economica', sans-serif;
+  font-size: 30px;
+  color: ${colors.grey6}
+`;
+
+const Home = () => {
+  return (
+    <HomeWrapper direction="column">
+      <HomeNameTitle direction="column">
+        <FadeInTransition>
+          <HomeMyName> LINA YANG </HomeMyName>
+          <HomeMyTitles>
+            SOFTWARE ENGINEER・FULL-STACK DEVELOPER・UI DESIGNER
+          </HomeMyTitles>
+        </FadeInTransition>
+      </HomeNameTitle>
+      <About />
+      <Projects />
+    </HomeWrapper>
+  );
+};
 
 export default withRouter(Home);

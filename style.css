@@ -1,35 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 /*@import url('https://fonts.googleapis.com/css?family=Poppins:300, 400, 500')*/
-@import url('https://fonts.googleapis.com/css?family=Poppins|Wire+One')
+@import url('https://fonts.googleapis.com/css?family=Poppins|Wire+One');
 @import url('href="https://fonts.googleapis.com/css?family=Wire+One');
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Damion|Economica|Sacramento|Fira+Sans|Josefin+Sans');
 
-html, body {
+html,
+body {
   height: 100%;
   display: grid;
 }
-
-.homeDiv {
-  background: url('/src/client/images/office.png') no-repeat center; 
-  min-height: 100%;
-}
-
-
+/* 
 .languageButton {
-  float:right;
+  float: right;
   font-family: 'Roboto', sans-serif;
 }
 
-.centerDiv {
-  /*text-align: center;*/
-  /*position: absolute;*/
-  /*margin: auto;*/
+.center-div {
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+}
+
+.text-div {
+  letter-spacing: 0.1em;
+  color: #172b40;
+  text-align: center;
 }
 
 .footer {
@@ -49,30 +47,6 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
-.centerName {
-  text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 90px;
-}
-
-.centerTitle {
-  text-align: center;
-  font-family: 'Economica', sans-serif;
-  font-size: 30px;
-}
-
-.navLinkGroup {
-  text-align: center;
-}
-
-.navlink {
-  text-decoration: none;
-  color: #212121;
-  width: 80%;
-  font-size: 20px;
-  font-family: "Josefin Sans", sans-serif;
-}
-
 .example-appear {
   /*transform: translate(0, 0),*/
   opacity: 0.01;
@@ -84,10 +58,6 @@ html, body {
   transition: opacity 1s ease-in;
 }
 
-.developmentExpTexts {
-  float: right;
-}
-
 .line {
   overflow: scroll;
   display: block;
@@ -96,5 +66,4 @@ html, body {
 .readMoreButton {
   float: right;
   top: -40px;
-}
-
+} */

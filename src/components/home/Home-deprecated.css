@@ -1,4 +1,4 @@
-.home {
+/* .home {
   background: url('/src/client/images/office.png') no-repeat center;
   min-height: 100%;
 }
@@ -27,4 +27,21 @@
   width: 80%;
   font-size: 20px;
   font-family: 'Josefin Sans', sans-serif;
+} */
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

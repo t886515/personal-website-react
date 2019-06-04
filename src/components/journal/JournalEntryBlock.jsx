@@ -1,20 +1,12 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { H1, CenterTextAlign, CenterDiv } from '../../styledComponents';
-import {
-  Card,
-  CardActions,
-  CardHeader,
-  CardMedia,
-  CardTitle,
-  CardText,
-} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
+
 // import Office from '../images/bg.jpg'
 
 class JournalEntryBlock extends React.Component {
   state = {
-    zDepth: 2,
+    zDepth: 2
   };
 
   handleMouseLeave = () => {
