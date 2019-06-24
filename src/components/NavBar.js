@@ -14,7 +14,7 @@ const NavBarWrapper = style.header`
   color: ${colors.grey1}
   `;
 
-const InitialLinkWrapper = style.div`
+const InitialLinkWrapper = style(Link)`
 
   font-family: 'Dancing Script', cursive;
   margin: 15px 20px;
@@ -40,6 +40,7 @@ const HomeNavLinks = style(FlexWrapper)`
 const IconLink = style(Link)`
   color: ${colors.grey4}
 `;
+
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
@@ -51,7 +52,7 @@ class NavBar extends React.Component {
   render() {
     return (
       <NavBarWrapper>
-        <InitialLinkWrapper>♡ L . Y .</InitialLinkWrapper>
+        <InitialLinkWrapper to="/">♡ L . Y .</InitialLinkWrapper>
         <HomeNavLinks>
           <IconLink to="/about">Resume</IconLink>
           <IconLink to="/journal">Journal</IconLink>

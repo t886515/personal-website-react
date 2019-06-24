@@ -1,19 +1,42 @@
 import React from 'react';
 import style from 'styled-components';
-import { FlexWrapper, Card, InsideCard } from '../../share-style/share-styles';
+import {
+  colors,
+  Card,
+  InsideCard,
+  InsideCardImage
+} from '../../share-style/share-styles';
+
+const ImageBackground = style.div`
+  background-color: gray;
+`;
 
 const ProjectCard = style(Card)`
+  margin: 10px;
+  width: 20%;
+
+  &:hover {
+    flex: 3 0 auto;
+  }
+ 
 
 `;
 
+//  &: hover {
+//   flex: 3 0 auto;
+// }
 const ProjectHoverCard = style(InsideCard)`
-
+  display: flex;
+  flex-direction: column;
+  color: ${colors.grey1};
 `;
 
 const Project = () => {
   return (
     <ProjectCard>
-      <img src="./static/images/THD_logo.jpg" />
+      <ImageBackground>
+        <InsideCardImage src="./static/images/THD_logo.jpg" />
+      </ImageBackground>
       <ProjectHoverCard>
         <span>
           Integrated Slack API with Home Depot's internal browser testing

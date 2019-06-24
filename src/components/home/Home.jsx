@@ -34,7 +34,6 @@ const HomeNameTitle = style(FlexWrapper)`
     right: 10px;
     bottom: 10px;
     content: '';
-    border: 1px white solid;
   }
 
 `;

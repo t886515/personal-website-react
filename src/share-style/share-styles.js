@@ -100,6 +100,12 @@ export const InsideCard = style.div`
   height: 100%;
   opacity: 0;
   transition: all 0.3s ease-out;
+  overflow: hidden;
+`;
+
+export const InsideCardImage = style.img`
+    opacity: 1;
+    display: block;
 `;
 
 export const Card = style.div`
@@ -120,8 +126,18 @@ export const Card = style.div`
     opacity: 1;
     transform: scale(0.9);
     transition: all 0.3s ease-in;
+    overflow: hidden;
   }
+
+  &:hover ${InsideCardImage} {
+    opacity: 0.4;
+  }
+
 `;
+
+// const ImageGradient = style.div`
+
+// `;
 
 // const ParallaxWrapper = style.div`
 //   perspective: 1px;

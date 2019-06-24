@@ -10,12 +10,15 @@ import {
 const AboutWrapper = style(FlexWrapper)`
   justify-content: center;
   align-items: center;
-  margin: 50px 0;
+  margin: 50px 0 70px 0;
 `;
 const AboutDescription = style(FlexWrapper)`
   width: 500px;
   & > *:not(:first-child) {
     margin-top: 10px;
+  }
+  & >:last-child {
+    margin-bottom: 20px;
   }
 `;
 
