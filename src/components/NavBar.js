@@ -15,30 +15,31 @@ const NavBarWrapper = style.header`
   `;
 
 const InitialLinkWrapper = style(Link)`
-
   font-family: 'Dancing Script', cursive;
-  margin: 15px 20px;
+  margin: 20px 20px;
   color: ${colors.grey4};
-  font-size: 1.5rem;
-
+  font-size: 2.0rem;
+  text-decoration: none;
 `;
 
 const HomeNavLinks = style(FlexWrapper)`
   justify-content: center;
   align-items: center;
-  margin: 15px 20px;
+  margin: 20px 0px;
   color: ${colors.grey4}
 
-  & > *:not(:first-child) {
-    margin-left: 10px;
-  }
-  & > *:not(:last-child) {
-    margin-right: 10px;
+  & > * {
+    margin-right: 20px;
   }
 `;
 
 const IconLink = style(Link)`
-  color: ${colors.grey4}
+  color: ${colors.grey4};
+  text-decoration: none;
+  font-family: 'Economica',sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  letter-spacing: 1px;
 `;
 
 class NavBar extends React.Component {

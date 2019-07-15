@@ -1,43 +1,15 @@
 import React from 'react';
-import style from 'styled-components';
 import {
-  colors,
   Card,
   InsideCard,
   InsideCardImage
-} from '../../share-style/share-styles';
-
-const ImageBackground = style.div`
-  background-color: gray;
-`;
-
-const ProjectCard = style(Card)`
-  margin: 10px;
-  width: 20%;
-
-  &:hover {
-    flex: 3 0 auto;
-  }
- 
-
-`;
-
-//  &: hover {
-//   flex: 3 0 auto;
-// }
-const ProjectHoverCard = style(InsideCard)`
-  display: flex;
-  flex-direction: column;
-  color: ${colors.grey1};
-`;
+} from '../../share-style/card-1';
 
 const Project = () => {
   return (
-    <ProjectCard>
-      <ImageBackground>
-        <InsideCardImage src="./static/images/THD_logo.jpg" />
-      </ImageBackground>
-      <ProjectHoverCard>
+    <Card>
+      <InsideCardImage src="./static/images/THD_logo.jpg" />
+      <InsideCard>
         <span>
           Integrated Slack API with Home Depot's internal browser testing
           framework to provide continuous error report monitoring.
@@ -65,8 +37,8 @@ const Project = () => {
           Depot's internal browser testing tool using Vue.js, Apollo and
           D3/nvd3.
         </span>
-      </ProjectHoverCard>
-    </ProjectCard>
+      </InsideCard>
+    </Card>
   );
 };
 
